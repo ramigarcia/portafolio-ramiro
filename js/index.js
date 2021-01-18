@@ -5,10 +5,10 @@ const d = document;
 
 d.addEventListener('DOMContentLoaded', e => {
   e.preventDefault('');
-  // countdown(
-  //   'countdown',
-  //   'May 3, 2021',
-  //   '¡Hoy es mi cumpleaños yeah!'
-  // );
+  countdown(
+    'countdown',
+    'May 3, 2021',
+    '¡Hoy es mi cumpleaños yeah!'
+  );
   hideAlert()
 })

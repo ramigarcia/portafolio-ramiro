@@ -575,6 +575,10 @@ header {
     flex-direction: column;
   }
 
+  .cuenta-regresiva{
+    display: none;
+  }
+
   .experience__languages {
     flex-direction: column;
   }
