@@ -333,15 +333,31 @@
         <section class="contact" id="contacto">
           <h2 class="contact__title">Contáctame 😉</h2>
           <div class="contact__row">
-            <!-- Container form -->
-            <div class="contact__form__left">
-              <!-- Formulario -->
-              <form action="" class="form">
+            <!-- Formulario -->
+            <form action="" class="form contact__form__left">
+              <label for="nombre">
+                <span>Nombre</span>
                 <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+              </label>
+              <label for="email">
+                <span>E-mail</span>
                 <input type="email" name="email" id="email" placeholder="Ingresa tu E-mail">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-              </form>
-            </div>
+              </label>
+              <label for="asunto">
+                <span>Asunto</span>
+                <input list="asunto">
+                <datalist id="asunto">
+                  <option value="Trabajo"></option>
+                  <option value="Feedback"></option>
+                  <option value="Saludo 👋"></option>
+                </datalist>
+              </label>
+              <label for="mensaje">
+                <span>Tu mensaje</span>
+                <textarea name="message" id="mensaje" cols="50" rows="5"></textarea>
+              </label>
+              <input type="submit" value="¡Enviar!" class="btn__form">
+            </form>
             <!-- Container text -->
             <div class="contact__text__right">
               <p style="color: white;">
