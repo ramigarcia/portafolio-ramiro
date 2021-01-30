@@ -581,7 +581,38 @@ header {
 .contact{
   border: 1px solid red;
   width: 100%;
-  height: 400px;
+  margin-top: 80px;
+}
+
+.contact__title{
+  color: var(--bgBody);
+  text-align: center;
+}
+
+.contact__row{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid blue;
+}
+
+.contact__form__left{
+  border: 1px solid red;
+  max-width: 400px;
+  min-width: 250px;
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.contact__text__right{
+  border: 1px solid red;
+  display: none;
+  max-width: 400px;
+  min-width: 280px;
+  width: 100%;
+  height: 450px;
 }
 
 @media screen and (max-width: 1040px) {
