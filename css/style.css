@@ -626,7 +626,7 @@ header {
 }
 
 .form label input{
-  min-width: 280px;
+  min-width: 240px;
   max-width: 320px;
   width: 100%;
   height: 35px;
@@ -640,7 +640,7 @@ header {
 
 
 .form label textarea{
-  min-width: 280px;
+  min-width: 240px;
   max-width: 320px;
   min-height: 70px;
   max-height: 150px;
@@ -670,8 +670,8 @@ form .btn__form-in-active{
 
 .contact__text-right{
   max-width: 600px;
-  min-width: 280px;
   width: 100%;
+  height: 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -699,16 +699,39 @@ form .btn__form-in-active{
   .wrapper {
     clip-path: polygon(50% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
   }
+
+  .cuenta-regresiva {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .form label textarea{
+    min-width: 280px;
+  }
+}
+
+@media screen and (max-width: 999px){
+  .contact__row{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .contact__text-right{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__text-right-text {
+    margin: 15px auto;
 }
 
 @media screen and (max-width: 948px) {
   .experience {
     display: flex;
     flex-direction: column;
-  }
-
-  .cuenta-regresiva {
-    display: none;
   }
 
   .experience__languages {
