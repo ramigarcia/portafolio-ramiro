@@ -330,15 +330,17 @@
             </article>
           </section>
         </section>
+        <!-- CONTACTO -->
         <section class="contact">
           <h2 class="contact__title" id="contacto">Contáctame 😉</h2>
           <div class="contact__row">
             <!-- Formulario -->
-            <form action="" class="form contact__form__left">
+            <form class="form contact__form__left">
               <label for="nombre">
                 <span>Nombre</span>
                 <input type="text" name="nombre" id="nombre" placeholder="Ingrésa tu nombre"
-                  title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                  title="Nombre sólo acepta letras y espacios en blanco" minlength="2"
+                  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
               </label>
               <label for="email">
                 <span>E-mail</span>
@@ -356,8 +358,8 @@
               </label>
               <label for="mensaje">
                 <span>Tu mensaje</span>
-                <textarea name="message" cols="10" rows="5" placeholder="Escribe tu mensaje" data-pattern="^.{1,255}$"
-                  title="Tu mensaje no debe exceder los 255 caracteres" required></textarea>
+                <textarea name="message" cols="10" rows="5" placeholder="Escribe tu mensaje" minlength="2"
+                  data-pattern="^.{1,255}$" title="Tu mensaje no debe exceder los 255 caracteres" required></textarea>
               </label>
               <input type="submit" value="¡Enviar!" class="btn__form btn__form-in-active">
               <div class="contact__form-loader none">

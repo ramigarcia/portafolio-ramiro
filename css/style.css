@@ -92,14 +92,6 @@ header {
 
 /* hero */
 
-/* .title {
-  font-size: 2rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 50px auto;
-} */
-
 .hero {
   width: 100%;
   margin: 70px auto 0;
@@ -143,6 +135,7 @@ header {
 .hero .hero__data__profile .hero__data__profile__text a {
   color: var(--azulito);
   font-style: italic;
+  text-decoration: underline;
 }
 
 .cuenta-regresiva {
@@ -539,6 +532,7 @@ header {
 
 .jobs__card__description a {
   color: rgb(63, 105, 255);
+  text-decoration: underline;
 }
 
 .jobs__card__button__page, .jobs__card__button__repo {
@@ -618,6 +612,16 @@ header {
 
 .form input[type="submit"] {
   border: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  margin: 15px 0 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: var(--secondaryFont);
+  color: rgba(255, 255, 255, 0.9);
+  background: rgb(63, 105, 255);
+  cursor: pointer;
 }
 
 .form [required]:valid {
@@ -651,19 +655,6 @@ header {
   background: var(--background-inputs-textarea);
   color: white;
   resize: none;
-}
-
-form .btn__form {
-  width: 150px;
-  height: 40px;
-  border-radius: 15px;
-  margin: 15px 0 0;
-  font-size: 1.1rem;
-  font-weight: 500;
-  font-family: var(--secondaryFont);
-  color: rgba(255, 255, 255, 0.9);
-  background: rgb(63, 105, 255);
-  cursor: pointer;
 }
 
 form .btn__form-in-active {
