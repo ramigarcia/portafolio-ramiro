@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <title>Portafolio | Ramiro E. García, Web developer</title>
   <meta name="description"
-    content="¡Hola! soy Ramiro García, tengo 17 años y soy Web Developer Jr. Este es mi portafolio espero te guste y podamos trabajar juntos">
+    content="¡Hola! soy Ramiro García, tengo 16 años y soy Web Developer Jr. Este es mi portafolio espero te guste y podamos trabajar juntos">
   <meta name="canonical" href="https://ramigarcia.github.io/portafolio-2021/">
   <meta name="favicon" href="https://ramigarcia.github.io/portafolio-2021/images/ramiro_favicon.png">
   <meta name="apple-touch-icon" href="https://ramigarcia.github.io/portafolio-2021/images/ramiro_favicon.png">
@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#ff0071">
   <meta property="og:title" name="twitter:title" content="Portafolio | Ramiro E. García, Web developer">
   <meta property="og:image" name="twitter:image"
-    content="https://ramigarcia.github.io/portafolio-2021/images/laptop.png">
+    content="https://ramigarcia.github.io/portafolio-2021/images/ramiro-frontend.png">
   <meta property="og:url" name="twitter:url" content="https://ramigarcia.github.io/portafolio-2021/">
   <meta property="og:description" name="twitter:description"
     content="¡Hola! soy Ramiro García, tengo 16 años y soy Web Developer Jr. Este es mi portafolio espero te guste y podamos trabajar juntos">
@@ -337,15 +337,17 @@
             <form action="" class="form contact__form__left">
               <label for="nombre">
                 <span>Nombre</span>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingrésa tu nombre">
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrésa tu nombre"
+                  title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
               </label>
               <label for="email">
                 <span>E-mail</span>
-                <input type="email" name="email" id="email" placeholder="Ingrésa tu E-mail">
+                <input type="email" name="email" id="email" placeholder="Ingrésa tu email" title="Email incorrecto"
+                  pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
               </label>
               <label for="asunto">
                 <span>Asunto</span>
-                <input list="asunto">
+                <input list="asunto" required title="El asunto es requerido" required>
                 <datalist id="asunto">
                   <option value="Trabajo"></option>
                   <option value="Feedback"></option>
@@ -354,9 +356,13 @@
               </label>
               <label for="mensaje">
                 <span>Tu mensaje</span>
-                <textarea name="message" id="mensaje" cols="10" rows="5"></textarea>
+                <textarea name="message" cols="10" rows="5" placeholder="Escribe tu mensaje" data-pattern="^.{1,255}$"
+                  title="Tu mensaje no debe exceder los 255 caracteres" required></textarea>
               </label>
               <input type="submit" value="¡Enviar!" class="btn__form btn__form-in-active">
+              <div class="contact__form-loader">
+                <img src="" alt="Cargando">
+              </div>
             </form>
             <!-- Container text -->
             <div class="contact__text-right">
