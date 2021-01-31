@@ -600,6 +600,9 @@ header {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  --background-inputs-textarea: rgba(52, 58, 68, 0.7);
+  --form-ok-color: rgba(63, 105, 255, 0.7);
+  --form-error-color: transparent;
 }
 
 .form span {
@@ -609,8 +612,20 @@ header {
 
 .form input, .form textarea {
   outline: none;
-  border: none;
+  /* border: none; */
   font-family: var(--primaryFont);
+}
+
+.form input[type="submit"] {
+  border: none;
+}
+
+.form [required]:valid {
+  border: thin solid var(--form-ok-color);
+}
+
+.form [required]:invalid {
+  border: thin solid var(--form-error-color);
 }
 
 .form label input {
@@ -622,20 +637,20 @@ header {
   padding-left: 15px;
   font-size: .8rem;
   border-radius: 3px;
-  background: rgba(52, 58, 68, 0.7);
+  background: var(--background-inputs-textarea);
   color: white;
 }
 
 .form label textarea {
   min-width: 240px;
   max-width: 320px;
-  min-height: 70px;
-  max-height: 150px;
+  width: 100%;
   font-size: .9rem;
   border-radius: 3px;
   padding: 5px 5px 5px 10px;
-  background: rgba(52, 58, 68, 0.7);
+  background: var(--background-inputs-textarea);
   color: white;
+  resize: none;
 }
 
 form .btn__form {
@@ -681,6 +696,17 @@ form .btn__form-in-active {
 .contact__text-right-text em {
   font-size: 1rem;
   color: var(--primary);
+}
+
+.none {
+  display: none;
+}
+
+.contact__form-response p {
+  color: white;
+  font-size: 1.2rem;
+  font-family: var(--primaryFont);
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1040px) {
