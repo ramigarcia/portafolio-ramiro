@@ -17,11 +17,7 @@
   --withe80: #4b4d50;
   --baseSecondary: rgb(34, 37, 42);
   --bgBody: rgb(249, 248, 255);
-  --linearPrimary: linear-gradient(
-    to right,
-    rgba(103, 220, 249, 0.902) 30.72%,
-    rgba(51, 59, 209, 0.902) 100.8%
-  );
+  --linearPrimary: linear-gradient( to right, rgba(103, 220, 249, 0.902) 30.72%, rgba(51, 59, 209, 0.902) 100.8%);
   --azulito: rgb(20, 61, 207);
 }
 
@@ -45,8 +41,7 @@ a {
   visibility: hidden;
 }
 
-.closeMenu,
-.menu {
+.closeMenu, .menu {
   display: none;
 }
 
@@ -180,10 +175,7 @@ header {
   align-items: center;
 }
 
-.days,
-.hours,
-.minutes,
-.seconds {
+.days, .hours, .minutes, .seconds {
   text-align: center;
   border-radius: 5px;
   display: flex;
@@ -196,10 +188,7 @@ header {
   box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
-.days span,
-.hours span,
-.minutes span,
-.seconds span {
+.days span, .hours span, .minutes span, .seconds span {
   font-weight: 600;
 }
 
@@ -241,7 +230,6 @@ header {
   from {
     transform: translateY(-30px);
   }
-
   to {
     transform: translateY(0px);
   }
@@ -280,6 +268,7 @@ header {
 }
 
 /* contenido principal */
+
 .wrapper {
   max-width: 100%;
   clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -313,6 +302,7 @@ header {
 }
 
 /* Experiencia */
+
 .experience {
   margin: 80px auto 0 auto;
   width: 100%;
@@ -481,8 +471,7 @@ header {
   bottom: 0;
 }
 
-.jobs__title::after,
-.experience__title::after {
+.jobs__title::after, .experience__title::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -552,8 +541,7 @@ header {
   color: rgb(63, 105, 255);
 }
 
-.jobs__card__button__page,
-.jobs__card__button__repo {
+.jobs__card__button__page, .jobs__card__button__repo {
   margin: 5px;
   width: 70%;
   min-height: 35px;
@@ -578,25 +566,26 @@ header {
 }
 
 /* Seccion Contacto */
-.contact{
+
+.contact {
   width: 100%;
   margin-top: 80px;
 }
 
-.contact__title{
+.contact__title {
   color: var(--bgBody);
   text-align: center;
   font-size: 1.7rem;
 }
 
-.contact__row{
+.contact__row {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.contact__form__left{
+.contact__form__left {
   border: 2px solid var(--rosita);
   max-width: 400px;
   min-width: 250px;
@@ -605,7 +594,7 @@ header {
   border-radius: 10px;
 }
 
-.form{
+.form {
   padding: 25px 10px 20px;
   display: flex;
   flex-direction: column;
@@ -613,19 +602,18 @@ header {
   align-items: center;
 }
 
-.form span{
+.form span {
   font-size: 1.2rem;
   color: var(--bgBody);
 }
 
-.form input,
-.form textarea{
+.form input, .form textarea {
   outline: none;
   border: none;
   font-family: var(--primaryFont);
 }
 
-.form label input{
+.form label input {
   min-width: 240px;
   max-width: 320px;
   width: 100%;
@@ -638,8 +626,7 @@ header {
   color: white;
 }
 
-
-.form label textarea{
+.form label textarea {
   min-width: 240px;
   max-width: 320px;
   min-height: 70px;
@@ -651,7 +638,7 @@ header {
   color: white;
 }
 
-form .btn__form{
+form .btn__form {
   width: 150px;
   height: 40px;
   border-radius: 15px;
@@ -660,15 +647,16 @@ form .btn__form{
   font-weight: 500;
   font-family: var(--secondaryFont);
   color: rgba(255, 255, 255, 0.9);
-  background:  rgb(63, 105, 255);
+  background: rgb(63, 105, 255);
   cursor: pointer;
 }
 
-form .btn__form-in-active{
+form .btn__form-in-active {
   opacity: .7;
+  cursor: initial;
 }
 
-.contact__text-right{
+.contact__text-right {
   max-width: 600px;
   width: 100%;
   height: 400px;
@@ -678,7 +666,7 @@ form .btn__form-in-active{
   align-items: center;
 }
 
-.contact__text-right-text{
+.contact__text-right-text {
   max-width: 550px;
   border-radius: 5px;
   padding: 15px;
@@ -690,7 +678,7 @@ form .btn__form-in-active{
   box-shadow: 3px 4px 6px rgba(63, 105, 255, .5);
 }
 
-.contact__text-right-text em{
+.contact__text-right-text em {
   font-size: 1rem;
   color: var(--primary);
 }
@@ -699,181 +687,157 @@ form .btn__form-in-active{
   .wrapper {
     clip-path: polygon(50% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
   }
-
   .cuenta-regresiva {
     display: none;
   }
 }
 
-@media screen and (min-width: 1000px){
-  .form label textarea{
+@media screen and (min-width: 1000px) {
+  .form label textarea {
     min-width: 280px;
   }
 }
 
-@media screen and (max-width: 999px){
-  .contact__row{
+@media screen and (max-width: 999px) {
+  .contact__row {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     padding: 0 20px;
   }
-
-  .contact__text-right{
+  .contact__text-right {
     flex-direction: column;
     align-items: center;
   }
-
   .contact__text-right-text {
     margin: 15px auto;
-}
-
-@media screen and (max-width: 948px) {
-  .experience {
-    display: flex;
-    flex-direction: column;
   }
-
-  .experience__languages {
-    flex-direction: column;
+  @media screen and (max-width: 948px) {
+    .experience {
+      display: flex;
+      flex-direction: column;
+    }
+    .experience__languages {
+      flex-direction: column;
+    }
+    .language::after {
+      display: none;
+    }
+    .language {
+      max-width: 500px;
+      text-align: center;
+      margin: 20px auto;
+    }
   }
-
-  .language::after {
-    display: none;
+  @media screen and (max-width: 900px) {
+    .wrapper {
+      clip-path: polygon(50% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+    .experience {
+      margin: 25px auto 0 auto;
+    }
   }
-
-  .language {
-    max-width: 500px;
-    text-align: center;
-    margin: 20px auto;
+  @media screen and (max-width: 878px) {
+    .wrapper {
+      clip-path: polygon(50% 2%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+    .hero {
+      flex-direction: column;
+    }
+    .hero .hero__data__profile {
+      margin-left: 0;
+    }
+    .hero .hero__ghost__profile {
+      right: 0;
+      left: 0;
+      margin: 40px auto;
+    }
+    .hero__ghost__profile .container-grid {
+      bottom: -29px;
+    }
   }
-}
-
-@media screen and (max-width: 900px) {
-  .wrapper {
-    clip-path: polygon(50% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
+  @media screen and (max-width: 755px) {
+    .circle {
+      display: none;
+    }
+    .jobs .jobs__cards .jobs__card {
+      max-width: 350px;
+    }
   }
-
-  .experience {
-    margin: 25px auto 0 auto;
+  @media screen and (max-width: 660px) {
+    .navigation .navigation__list {
+      z-index: 1000;
+      background: var(--baseSecondary);
+      flex-direction: column;
+      position: fixed;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      margin: auto;
+      width: 300px;
+      height: 100vh;
+      justify-content: space-evenly;
+      padding: 50px 15px;
+      transform: translateX(110%);
+      transition: all 0.3s ease-in;
+    }
+    .navigation .navigation__list .navigation__item a {
+      font-size: 1.2rem;
+    }
+    .menu {
+      position: absolute;
+      z-index: 1001;
+      right: 15px;
+      top: 11px;
+      cursor: pointer;
+      display: block;
+    }
+    .closeMenu {
+      position: fixed;
+      z-index: 1001;
+      right: 15px;
+      top: 20px;
+      display: block;
+      transform: translateX(110%);
+      transition: all 0.3s ease-in;
+    }
+    .overlay {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 500;
+      left: 0;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(2.5px);
+      visibility: visible;
+      transform: translateX(-110%);
+      transition: all 0.3s ease-in;
+    }
+    .navigation .navigation__list.show-menu {
+      transform: translateX(0%);
+      transition: all 0.3s ease-in;
+    }
+    .show {
+      transform: translateX(0%);
+      transition: all 0.3s ease-in;
+    }
   }
-}
-
-@media screen and (max-width: 878px) {
-  .wrapper {
-    clip-path: polygon(50% 2%, 100% 0, 100% 100%, 0 100%, 0 0);
+  @media screen and (max-width: 650px) {
+    .wrapper {
+      clip-path: polygon(50% 2%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
   }
-
-  .hero {
-    flex-direction: column;
-  }
-
-  .hero .hero__data__profile {
-    margin-left: 0;
-  }
-
-  .hero .hero__ghost__profile {
-    right: 0;
-    left: 0;
-    margin: 40px auto;
-  }
-
-  .hero__ghost__profile .container-grid {
-    bottom: -29px;
-  }
-}
-
-@media screen and (max-width: 755px) {
-  .circle {
-    display: none;
-  }
-
-  .jobs .jobs__cards .jobs__card {
-    max-width: 350px;
-  }
-}
-
-@media screen and (max-width: 660px) {
-  .navigation .navigation__list {
-    z-index: 1000;
-    background: var(--baseSecondary);
-    flex-direction: column;
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    margin: auto;
-    width: 300px;
-    height: 100vh;
-    justify-content: space-evenly;
-    padding: 50px 15px;
-    transform: translateX(110%);
-    transition: all 0.3s ease-in;
-  }
-
-  .navigation .navigation__list .navigation__item a {
-    font-size: 1.2rem;
-  }
-
-  .menu {
-    position: absolute;
-    z-index: 1001;
-    right: 15px;
-    top: 11px;
-    cursor: pointer;
-    display: block;
-  }
-
-  .closeMenu {
-    position: fixed;
-    z-index: 1001;
-    right: 15px;
-    top: 20px;
-    display: block;
-    transform: translateX(110%);
-    transition: all 0.3s ease-in;
-  }
-
-  .overlay {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 500;
-    left: 0;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(2.5px);
-    visibility: visible;
-    transform: translateX(-110%);
-    transition: all 0.3s ease-in;
-  }
-
-  .navigation .navigation__list.show-menu {
-    transform: translateX(0%);
-    transition: all 0.3s ease-in;
-  }
-  .show {
-    transform: translateX(0%);
-    transition: all 0.3s ease-in;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .wrapper {
-    clip-path: polygon(50% 2%, 100% 0, 100% 100%, 0 100%, 0 0);
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .hero .hero__ghost__profile {
-    width: 300px;
-    height: 300px;
-  }
-
-  .container-grid {
-    width: 300px;
-    height: 30px;
+  @media screen and (max-width: 375px) {
+    .hero .hero__ghost__profile {
+      width: 300px;
+      height: 300px;
+    }
+    .container-grid {
+      width: 300px;
+      height: 30px;
+    }
   }
 }
