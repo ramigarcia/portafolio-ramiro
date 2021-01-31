@@ -9,6 +9,16 @@ export default function contactFormValidation() {
     if (e.target.matches('.form [required]')) {
       let $input = e.target,
         pattern = $input.pattern || $input.dataset.pattern;
+
+      if (pattern) {
+        let regex = new RegExp(pattern);
+        return !regex.exec($input.value)
+          ? d.getElementById($input.name)
+          : console.log('succes')
+      }
+      if (!pattern) {
+
+      }
     }
   })
 }
