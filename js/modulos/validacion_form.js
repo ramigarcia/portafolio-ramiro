@@ -37,6 +37,13 @@ export default function contactFormValidation() {
       $response = d.querySelector('.contact__form-response');
 
     $loader.classList.remove('none')
+
+    setTimeout(() => {
+      $loader.classList.add('none')
+      $response.classList.remove('none')
+      $form.reset();
+      setTimeout(() => $response.classList.add('none'), 3000)
+    }, 4000);
   })
 }
 // Envio del formulario
