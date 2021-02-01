@@ -637,10 +637,13 @@ header {
   max-width: 320px;
   width: 100%;
   height: 35px;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   padding-left: 15px;
   font-size: .8rem;
-  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   background: var(--background-inputs-textarea);
   color: white;
 }
@@ -650,7 +653,10 @@ header {
   max-width: 320px;
   width: 100%;
   font-size: .9rem;
-  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   padding: 5px 5px 5px 10px;
   background: var(--background-inputs-textarea);
   color: white;
@@ -698,6 +704,27 @@ form .btn__form-in-active {
   font-size: 1.2rem;
   font-family: var(--primaryFont);
   font-weight: 500;
+}
+
+.form .contact__form-error {
+  background-color: var(--bgBody);
+  color: var(--rosita);
+  font-size: .8rem;
+  max-width: 320px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin: auto auto 10px;
+  padding: 5px 10px;
+}
+
+#message {
+  margin-top: -4px;
+}
+
+.is-active {
+  display: block;
 }
 
 @media screen and (max-width: 1040px) {

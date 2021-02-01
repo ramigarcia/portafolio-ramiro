@@ -11,7 +11,7 @@ export default function contactFormValidation() {
     $span.textContent = input.title;
     $span.classList.add('contact__form-error', 'none');
     input.insertAdjacentElement('afterend', $span);
-  })
+  });
 
   d.addEventListener('keyup', (e) => {
     if (e.target.matches('.form [required]')) {
@@ -21,8 +21,8 @@ export default function contactFormValidation() {
       if (pattern) {
         let regex = new RegExp(pattern);
         return !regex.exec($input.value)
-          ? d.getElementById($input.name)
-          : console.log('succes')
+          ? d.getElementById($input.name).classList.add('is-active')
+          : d.getElementById($input.name).classList.remove('is-active')
       }
       if (!pattern) {
 
