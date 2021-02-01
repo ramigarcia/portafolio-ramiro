@@ -18,15 +18,25 @@ export default function contactFormValidation() {
       let $input = e.target,
         pattern = $input.pattern || $input.dataset.pattern;
 
-      if (pattern) {
+      if (pattern && $input.value !== '') {
         let regex = new RegExp(pattern);
         return !regex.exec($input.value)
           ? d.getElementById($input.name).classList.add('is-active')
-          : d.getElementById($input.name).classList.remove('is-active')
+          : d.getElementById($input.name).classList.remove('is-active');
       }
       if (!pattern) {
-
+        return $input.value === ''
+          ? d.getElementById($input.name).classList.add('is-active')
+          : d.getElementById($input.name).classList.remove('is-active');
       }
     }
   })
+  d.addEventListener('submit', (e) => {
+    e.preventDefault('');
+    const $loader = d.querySelector('.contact__form-loader'),
+      $response = d.querySelector('.contact__form-response');
+
+    $loader.classList.remove('none')
+  })
 }
+// Envio del formulario

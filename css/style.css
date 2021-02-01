@@ -663,11 +663,6 @@ header {
   resize: none;
 }
 
-form .btn__form-in-active {
-  opacity: .7;
-  cursor: initial;
-}
-
 .contact__text-right {
   max-width: 600px;
   width: 100%;

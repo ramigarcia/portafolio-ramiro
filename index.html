@@ -349,19 +349,14 @@
               </label>
               <label for="asunto">
                 <span>Asunto</span>
-                <input list="asunto" required title="El asunto es requerido" required>
-                <datalist id="asunto">
-                  <option value="Trabajo"></option>
-                  <option value="Feedback"></option>
-                  <option value="Saludo 👋"></option>
-                </datalist>
+                <input list="asunto" name="asunto" title="El asunto es requerido" required>
               </label>
               <label for="mensaje">
                 <span>Tu mensaje</span>
                 <textarea name="message" cols="10" rows="5" placeholder="Escribe tu mensaje" minlength="2"
                   data-pattern="^.{1,255}$" title="Tu mensaje no debe exceder los 255 caracteres" required></textarea>
               </label>
-              <input type="submit" value="¡Enviar!" class="btn__form btn__form-in-active">
+              <input type="submit" value="¡Enviar!" class="btn__form">
               <div class="contact__form-loader none">
                 <img src="./assets/loader.svg" alt="Cargando">
               </div>
