@@ -1,6 +1,6 @@
-# portafolio2021
+# rosablanq
+Ecommerce de telas 2021
 
+## Github Pages: 
 
-## Link Github Pages
-
-https://ramigarcia.github.io/portafolio-2021/
+https://ramigarcia.github.io/rosablanq/
