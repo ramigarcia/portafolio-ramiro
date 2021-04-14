@@ -17,7 +17,11 @@
   --withe80: #4b4d50;
   --baseSecondary: rgb(34, 37, 42);
   --bgBody: rgb(249, 248, 255);
-  --linearPrimary: linear-gradient( to right, rgba(103, 220, 249, 0.902) 30.72%, rgba(51, 59, 209, 0.902) 100.8%);
+  --linearPrimary: linear-gradient(
+    to right,
+    rgba(103, 220, 249, 0.902) 30.72%,
+    rgba(51, 59, 209, 0.902) 100.8%
+  );
   --azulito: rgb(20, 61, 207);
 }
 
@@ -41,7 +45,8 @@ a {
   visibility: hidden;
 }
 
-.closeMenu, .menu {
+.closeMenu,
+.menu {
   display: none;
 }
 
@@ -168,7 +173,10 @@ header {
   align-items: center;
 }
 
-.days, .hours, .minutes, .seconds {
+.days,
+.hours,
+.minutes,
+.seconds {
   text-align: center;
   border-radius: 5px;
   display: flex;
@@ -181,7 +189,10 @@ header {
   box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
-.days span, .hours span, .minutes span, .seconds span {
+.days span,
+.hours span,
+.minutes span,
+.seconds span {
   font-weight: 600;
 }
 
@@ -464,7 +475,8 @@ header {
   bottom: 0;
 }
 
-.jobs__title::after, .experience__title::after {
+.jobs__title::after,
+.experience__title::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -535,7 +547,8 @@ header {
   text-decoration: underline;
 }
 
-.jobs__card__button__page, .jobs__card__button__repo {
+.jobs__card__button__page,
+.jobs__card__button__repo {
   margin: 5px;
   width: 70%;
   min-height: 35px;
@@ -563,7 +576,7 @@ header {
 
 .contact {
   width: 100%;
-  margin-top: 80px;
+  margin: 80px 0 40px 0;
 }
 
 .contact__title {
@@ -604,7 +617,8 @@ header {
   color: var(--bgBody);
 }
 
-.form input, .form textarea {
+.form input,
+.form textarea {
   outline: none;
   /* border: none; */
   font-family: var(--primaryFont);
@@ -639,7 +653,7 @@ header {
   height: 35px;
   margin: 10px 0 0 0;
   padding-left: 15px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 0;
@@ -652,7 +666,7 @@ header {
   min-width: 240px;
   max-width: 320px;
   width: 100%;
-  font-size: .9rem;
+  font-size: 0.9rem;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 0;
@@ -666,7 +680,8 @@ header {
 .contact__text-right {
   max-width: 600px;
   width: 100%;
-  height: 450px;
+  margin: 0 0 30px 0;
+  min-height: 450px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -683,7 +698,7 @@ header {
   font-family: var(--secondaryFont);
   font-size: 1.1rem;
   font-weight: 400;
-  box-shadow: 3px 4px 6px rgba(63, 105, 255, .5);
+  box-shadow: 3px 4px 6px rgba(63, 105, 255, 0.5);
 }
 
 .contact__text-right-text {
@@ -696,7 +711,7 @@ header {
   color: var(--baseSecondary);
   font-family: var(--secondaryFont);
   font-weight: 300;
-  box-shadow: 3px 4px 6px rgba(63, 105, 255, .5);
+  box-shadow: 3px 4px 6px rgba(63, 105, 255, 0.5);
 }
 
 .contact__text-right-text em {
@@ -722,7 +737,7 @@ header {
 .form .contact__form-error {
   background-color: var(--bgBody);
   color: var(--rosita);
-  font-size: .8rem;
+  font-size: 0.8rem;
   max-width: 320px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
