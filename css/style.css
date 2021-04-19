@@ -414,7 +414,7 @@ header {
 .experience__text {
   max-width: 700px;
   padding: 20px;
-  margin: 80px auto;
+  margin: 80px 10px;
   background: rgba(255, 0, 113, 0.7);
   box-shadow: 8px 8px 12px rgba(37, 75, 221, 0.3);
 }
@@ -871,9 +871,9 @@ header {
       position: fixed;
       z-index: 1001;
       right: 15px;
-      top: 20px;
+      top: 11px;
       display: block;
-      transform: translateX(110%);
+      transform: translateX(150%);
       transition: all 0.3s ease-in;
     }
     .overlay {

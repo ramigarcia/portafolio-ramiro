@@ -4,13 +4,9 @@ import contactFormValidation from "./modulos/validacion_form.js";
 
 const d = document;
 
-d.addEventListener('DOMContentLoaded', e => {
-  e.preventDefault('');
-  countdown(
-    'countdown',
-    'May 3, 2021',
-    '¡Hoy es mi cumpleaños yeah!'
-  );
+d.addEventListener("DOMContentLoaded", (e) => {
+  e.preventDefault("");
+  countdown("countdown", "May 3, 2021", "¡Hoy es mi cumpleaños yeah!");
   hideAlert();
   contactFormValidation();
-})
+});
