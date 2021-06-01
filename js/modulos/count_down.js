@@ -25,6 +25,7 @@ export default function countdown(id, limitDate, finalMessage) {
 
     // console.log(countdownDate, now, limitTime)
     if (limitTime < 0) {
+      console.log();
       clearInterval(countdownTempo);
       $countdown.innerHTML = `<h3 class="happy__birthday">${finalMessage}</h3>`;
     }
