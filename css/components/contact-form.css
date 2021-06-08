@@ -1,0 +1,80 @@
+.contact__form__left {
+  border: 2px solid var(--rosita);
+  max-width: 400px;
+  min-width: 250px;
+  width: 100%;
+  min-height: 450px;
+  border-radius: 10px;
+}
+
+.form {
+  padding: 25px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  --background-inputs-textarea: rgba(52, 58, 68, 0.7);
+  --form-ok-color: rgba(63, 105, 255, 0.7);
+  --form-error-color: transparent;
+}
+
+.form span {
+  font-size: 1.2rem;
+  color: var(--bgBody);
+}
+
+.form input,
+.form textarea {
+  font-family: var(--primaryFont);
+}
+
+.form .btn__form {
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  margin: 15px 0 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: var(--secondaryFont);
+  color: rgba(255, 255, 255, 0.9);
+  background: rgb(63, 105, 255);
+  cursor: pointer;
+  border: none;
+}
+
+.form [required]:valid {
+  border: thin solid var(--form-ok-color);
+}
+
+.form [required]:invalid {
+  border: thin solid var(--form-error-color);
+}
+
+.form label input {
+  width: 320px;
+  height: 35px;
+  margin: 10px 0 0 0;
+  padding-left: 15px;
+  font-size: 0.8rem;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: var(--background-inputs-textarea);
+  color: white;
+}
+
+.form label textarea {
+  min-width: 240px;
+  max-width: 320px;
+  width: 100%;
+  font-size: 0.9rem;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 5px 5px 5px 10px;
+  background: var(--background-inputs-textarea);
+  color: white;
+  resize: none;
+}

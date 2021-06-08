@@ -7,11 +7,13 @@
   <link rel="icon" type="image/png" href="https://ramigarcia.github.io/portafolio-2021/images/ramiro_favicon.png">
   <link rel="stylesheet" href="./css/style.css">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- TITLE -->
   <title>Portafolio | Ramiro E. García, Web developer</title>
   <meta name="description"
     content="¡Hola! soy Ramiro García, tengo 17 años y soy Frontend Developer Jr. Este es mi portafolio espero te guste y podamos trabajar juntos">
@@ -44,17 +46,17 @@
         d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z">
       </path>
     </svg>
-    <nav id="navigation" class="navigation">
+    <nav id="navigation" role="navigation" class="navigation">
       <div class="logo">
         <a href="#">
           <img src="./images/ramiro.png" alt="">
         </a>
       </div>
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="#inicio">Inicio</a></li>
-        <li class="navigation__item"><a href="#experiencia">Experiencia</a></li>
-        <li class="navigation__item"><a href="#proyectos">Proyectos</a></li>
-        <li class="navigation__item"><a href="#contacto">Contacto</a></li>
+        <li class="navigation__item"><a href="#inicio" title="Inicio">Inicio</a></li>
+        <li class="navigation__item"><a href="#experiencia" title="Sección Experiencia">Experiencia</a></li>
+        <li class="navigation__item"><a href="#proyectos" title="Sección Proyectos">Proyectos</a></li>
+        <li class="navigation__item"><a href="#contacto" title="Sección Contacto">Contacto</a></li>
       </ul>
     </nav>
     <!-- hero -->
@@ -67,6 +69,8 @@
           ¡Hola!, mi nombre es <strong>Ramiro Eduardo García</strong>. Tengo 17 años estudio programación desde los 15
           años. Como todavía no trabaje para nadie, solo hay trabajos hechos por diversion, o por que estaban en un
           curso. Cada día trato de mejorar lo aprendido y de aprender más cosas, todo con el fin de ser cada día mejor.
+          Soy cadete de B.V.M <em><b>(Bombero Voluntarios de Matanza)</b></em>, y estudio programación en una escuela
+          tecnica.
           <br><br>
           ¡Ah! me olvidaba, tengo un proyecto, se llama Conectando Estudiantes. lo podes encontrar en <a
             class="conectandoestudiantes__link" href="https://conectandoestudiantes.com"
@@ -89,303 +93,302 @@
       </div>
     </div>
   </header>
-  <!-- contenido principal -->
-  <main>
-    <section class="wrapper">
-      <div class="container">
-        <div class="circle">
-          <svg class="circle__image" width="400" height="400" viewBox="0 0 1 500" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <circle cy="250" r="250" fill="#143dcf" />
-          </svg>
-          <img src="./images/white.png" class="puntitos__image" alt="">
+  <div class="container">
+    <div class="circle">
+      <svg class="circle__image" width="400" height="400" viewBox="0 0 1 500" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cy="250" r="250" fill="#143dcf" />
+      </svg>
+      <img src="./images/white.png" class="puntitos__image" alt="">
+    </div>
+    <!-- contenido principal -->
+    <main>
+      <!-- Experiencia -->
+      <section class="experience" id="experiencia">
+        <h2 class="experience__title">Experiencia</h2>
+        <!-- Lenguajes de Programacion -->
+        <div class="experience__languages">
+          <div class="html language">
+            <h3 class="language__title html__title">Html</h3>
+            <div class="container__text__language">
+              <p class="language__text">
+                No se, como medir mi nivel de manejo de Html pero. Aunque todavía sigo aprendido cosas sobre Html,
+                trato de perfeccionar mi dominio sobre el, a nivel semántica, seo, y buenas practicas.
+              </p>
+            </div>
+          </div>
+          <div class="css language">
+            <h3 class="language__title css__title">Css</h3>
+            <div class="container__text__language">
+              <p class="language__text">
+                Con css todavía me faltan aprender varias cosas como por ejemplo las animaciones, todavía no sé hacer
+                buenas animaciones con css, o poder dibujar. El fantasma que está en el <a href="#inicio">inicio</a>,
+                esta hecho con css - grid.
+              </p>
+            </div>
+          </div>
+          <div class="javascript language">
+            <h3 class="language__title js__title">JavaScript</h3>
+            <div class="container__text__language">
+              <p class="language__text">
+                Con JavaScript tengo un buen manejo aunque no sé todo, obvio. Todavía sigo aprendido sobre este
+                grandioso lenguaje.
+              </p>
+            </div>
+          </div>
         </div>
-        <!-- Experiencia -->
-        <section class="experience" id="experiencia">
-          <h2 class="experience__title">Experiencia</h2>
-          <!-- Lenguajes de Programacion -->
-          <div class="experience__languages">
-            <div class="html language">
-              <h3 class="language__title html__title">Html</h3>
-              <div class="container__text__language">
-                <p class="language__text">
-                  No se, como medir mi nivel de manejo de Html pero. Aunque todavía sigo aprendido cosas sobre Html,
-                  trato de perfeccionar mi dominio sobre el, a nivel semántica, seo, y otras cosas.
-                </p>
-              </div>
-            </div>
-            <div class="css language">
-              <h3 class="language__title css__title">Css</h3>
-              <div class="container__text__language">
-                <p class="language__text">
-                  Con css todavía me faltan aprender varias cosas como por ejemplo las animaciones, todavía no sé hacer
-                  buenas animaciones con css, o poder dibujar. El fantasma que está en el <a href="#inicio">inicio</a>,
-                  esta hecho con css - grid.
-                </p>
-              </div>
-            </div>
-            <div class="javascript language">
-              <h3 class="language__title js__title">JavaScript</h3>
-              <div class="container__text__language">
-                <p class="language__text">
-                  Con JavaScript tengo un buen manejo aunque no sé todo, sé manejarlo bastante bien a nivel de consumir
-                  una API, de hacer validaciones, etc... Obvio todavía sigo aprendido sobre este grandioso lenguaje.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Experiencia texto -->
-          <div class="experience__text">
-            <p class="text">
-              Puede que entre mis trabajos echos encuentres alguno hecho con PHP, no lo puse como un lenguaje que uso
-              porque no lo hago sé lo básico y hasta ahí. Y con React es algo parecido no es un Framework que use
-              comúnmente, ya que todavía no domino muy bien javascript. Y como no estoy apurado prefiero aprender cada
-              cosa a su debido tiempo. Pero no quita que estoy dispuesto a aprender a usarlo si la situación lo amerita.
+        <!-- Experiencia texto -->
+        <div class="experience__text">
+          <p class="text">
+            Puede que entre mis trabajos hechos encuentres alguno hecho con PHP, no lo puse como un lenguaje que uso
+            habitualmente porque no lo hago, sé lo básico y hasta ahí. Y con React es algo parecido no es un Framework
+            que use comúnmente, y como no estoy apurado prefiero aprender cada cosa a su debido tiempo. Pero no quita
+            que estoy dispuesto a aprender a usarlo si la situación lo amerita.
+          </p>
+        </div>
+      </section>
+
+      <!-- trabajos -->
+      <section class="jobs">
+        <!-- titulo -->
+        <h2 class="jobs__title" id="proyectos">Trabajos</h2>
+        <div class="alert__jobs" id="alertJobs">
+          <p>
+            ⚠️ Estos son trabajos personales, los hice con el fin de poner en practica mis conocimientos.
+          </p>
+          <!-- <svg id="closeAlertJobs" fill="#fff" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+            viewBox="0 0 24 24">
+            <path
+              d="M9.172 16.242L12 13.414 14.828 16.242 16.242 14.828 13.414 12 16.242 9.172 14.828 7.758 12 10.586 9.172 7.758 7.758 9.172 10.586 12 7.758 14.828z" />
+            <path
+              d="M12,22c5.514,0,10-4.486,10-10S17.514,2,12,2S2,6.486,2,12S6.486,22,12,22z M12,4c4.411,0,8,3.589,8,8s-3.589,8-8,8 s-8-3.589-8-8S7.589,4,12,4z" />
+          </svg> -->
+        </div>
+        <!-- container de trabajos -->
+        <section class="jobs__cards">
+          <!-- trabajo -->
+          <article class="jobs__card">
+            <!-- contenedor de imagen -->
+            <figure class="jobs__card__img">
+              <!-- imagen -->
+              <img src="./images/ramiro.png" alt="Logo ramiro">
+            </figure>
+            <!-- titulo del trabajo -->
+            <h3 class="jobs__card__title">Authentication</h3>
+            <!-- descripcion del trabajo -->
+            <p class="jobs__card__description">
+              Este sistema de Autenticación está hecho con React y Friebase Auth.
             </p>
-          </div>
-        </section>
-        <!-- trabajos -->
-        <section class="jobs">
-          <!-- titulo -->
-          <h2 class="jobs__title" id="proyectos">Trabajos</h2>
-          <div class="alert__jobs" id="alertJobs">
-            <p>
-              Estos son trabajos personales, para poner en practica mis conocimientos.
+            <!-- botones -->
+            <span>No lo pude subir a GitHub pages porque no se, como se hace con una web site de React 😃. Pero podes
+              ver el repo abajo</span>
+            <!-- boton ver repositorio -->
+            <a href="https://github.com/ramigarcia/Authentication-React-Firebase" target="_blank"
+              class="jobs__card__button__repo">Repo</a>
+          </article>
+          <article class="jobs__card">
+            <!-- contenedor de imagen -->
+            <figure class="jobs__card__img">
+              <!-- imagen -->
+              <img src="./images/ramiro.png" alt="Logo ramiro">
+            </figure>
+            <!-- titulo del trabajo -->
+            <h3 class="jobs__card__title">RosaBlanq</h3>
+            <!-- descripcion del trabajo -->
+            <p class="jobs__card__description">
+              Ecommerce de Sabanas, Toallas, Barbijos, etc..., todavía está en desarrollo. Es un emprendimiento de mi
+              mamá. Mobile first
             </p>
-            <svg id="closeAlertJobs" fill="#fff" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-              viewBox="0 0 24 24">
-              <path
-                d="M9.172 16.242L12 13.414 14.828 16.242 16.242 14.828 13.414 12 16.242 9.172 14.828 7.758 12 10.586 9.172 7.758 7.758 9.172 10.586 12 7.758 14.828z" />
-              <path
-                d="M12,22c5.514,0,10-4.486,10-10S17.514,2,12,2S2,6.486,2,12S6.486,22,12,22z M12,4c4.411,0,8,3.589,8,8s-3.589,8-8,8 s-8-3.589-8-8S7.589,4,12,4z" />
-            </svg>
-          </div>
-          <!-- container de trabajos -->
-          <section class="jobs__cards">
-            <!-- trabajo -->
-            <article class="jobs__card">
-              <!-- contenedor de imagen -->
-              <figure class="jobs__card__img">
-                <!-- imagen -->
-                <img src="./images/ramiro.png" alt="Logo ramiro">
-              </figure>
-              <!-- titulo del trabajo -->
-              <h3 class="jobs__card__title">Authentication</h3>
-              <!-- descripcion del trabajo -->
-              <p class="jobs__card__description">
-                Este sistema de Autenticación está hecho con React y Friebase Auth.
-              </p>
-              <!-- botones -->
-              <span>No lo pude subir a GitHub pages porque no se, como se hace con un web site de React 😃. Pero podes
-                ver el repo abajo</span>
-              <!-- boton ver repositorio -->
-              <a href="https://github.com/ramigarcia/Authentication-React-Firebase" target="_blank"
-                class="jobs__card__button__repo">Repo</a>
-            </article>
-            <article class="jobs__card">
-              <!-- contenedor de imagen -->
-              <figure class="jobs__card__img">
-                <!-- imagen -->
-                <img src="./images/ramiro.png" alt="Logo ramiro">
-              </figure>
-              <!-- titulo del trabajo -->
-              <h3 class="jobs__card__title">RosaBlanq</h3>
-              <!-- descripcion del trabajo -->
-              <p class="jobs__card__description">
-                Ecommerce de Sabanas, Toallas, Barbijos, etc..., todavía está en desarrollo. Es un emprendimiento de mi
-                mamá, lo desarrollo junto con mi hermano
-              </p>
-              <!-- botones -->
-              <!-- bonton ver pagina -->
-              <span>No está subido todavía porque está en desarrollo pero poder ver el repo abajo</span>
-              <!-- boton ver repositorio -->
-              <a href="https://github.com/ramigarcia/rosablanq" target="_blank"
-                class="jobs__card__button__repo">Repo</a>
-            </article>
-            <article class="jobs__card">
-              <!-- contenedor de imagen -->
-              <figure class="jobs__card__img">
-                <!-- imagen -->
-                <img src="./images/ramiro.png" alt="Logo ramiro">
-              </figure>
-              <!-- titulo del trabajo -->
-              <h3 class="jobs__card__title">Pokedex</h3>
-              <!-- descripcion del trabajo -->
-              <p class="jobs__card__description">
-                Esta pokedex está hecha con Vanilla JavaScript para obtener los pokemones consumo la API de <a
-                  href="https://pokeapi.co/" target="_blank">Poke API</a>, es uno de mis primero proyectos con API
-              </p>
-              <!-- botones -->
-              <!-- bonton ver pagina -->
-              <a href="https://ramigarcia.github.io/Pokedex-JavaScript-PokeAPI/" target="_blank"
-                class="jobs__card__button__page">Ver</a>
-              <!-- boton ver repositorio -->
-              <a href="https://github.com/ramigarcia/Pokedex-JavaScript-PokeAPI" target="_blank"
-                class="jobs__card__button__repo">Repo</a>
-            </article>
-            <article class="jobs__card">
-              <!-- contenedor de imagen -->
-              <figure class="jobs__card__img">
-                <!-- imagen -->
-                <img src="./images/ramiro.png" alt="Logo ramiro">
-              </figure>
-              <!-- titulo del trabajo -->
-              <h3 class="jobs__card__title">Clima City</h3>
-              <!-- descripcion del trabajo -->
-              <p class="jobs__card__description">
-                Esta es una App del clima, es simple buscas tu ciudad y te dice la temperatura y el clima. La API es de
-                openWeathermap
-              </p>
-              <!-- botones -->
-              <!-- bonton ver pagina -->
-              <a href="https://ramigarcia.github.io/Clima-city/" target="_blank"
-                class="jobs__card__button__page">Ver</a>
-              <!-- boton ver repositorio -->
-              <a href="https://github.com/ramigarcia/Clima-city" target="_blank"
-                class="jobs__card__button__repo">Repo</a>
-            </article>
-            <article class="jobs__card">
-              <!-- contenedor de imagen -->
-              <figure class="jobs__card__img">
-                <!-- imagen -->
-                <img src="./images/ramiro.png" alt="Logo ramiro">
-              </figure>
-              <!-- titulo del trabajo -->
-              <h3 class="jobs__card__title">Primer Ecommerce</h3>
-              <!-- descripcion del trabajo -->
-              <p class="jobs__card__description">
-                Este es mi primer "ecommerce", no está terminado pero era algo que quería hacer y me gusto, ya que era
-                la primera vez que intentaba hacer uno.
-              </p>
-              <!-- botones -->
-              <!-- bonton ver pagina -->
-              <span>No está subido a github pages porque maneja php. Pero podes ver el repo abajo</span>
-              <!-- boton ver repositorio -->
-              <a href="https://github.com/ramigarcia/mi-primer-ecommerce-de-ropa" target="_blank"
-                class="jobs__card__button__repo">Repo</a>
-            </article>
-            <article class="jobs__card">
-              <!-- contenedor de imagen -->
-              <figure class="jobs__card__img">
-                <!-- imagen -->
-                <img src="./images/ramiro.png" alt="Logo ramiro">
-              </figure>
-              <!-- titulo del trabajo -->
-              <h3 class="jobs__card__title">Fundación Poboha</h3>
-              <!-- descripcion del trabajo -->
-              <p class="jobs__card__description">
-                Fundación de bien público destinada al servicio de la familia policial. Este es un tipo de landing page
-                para la Fundación poboha era de prueba.
-              </p>
-              <!-- botones -->
-              <!-- bonton ver pagina -->
-              <a href="https://ramigarcia.github.io/poboha-Fundation/" target="_blank"
-                class="jobs__card__button__page">Ver</a>
-              <!-- boton ver repositorio -->
-              <a href="https://github.com/ramigarcia/poboha-Fundation" target="_blank"
-                class="jobs__card__button__repo">Repo</a>
-            </article>
-            <article class="jobs__card">
-              <!-- contenedor de imagen -->
-              <figure class="jobs__card__img">
-                <!-- imagen -->
-                <img src="./images/ramiro.png" alt="Logo ramiro">
-              </figure>
-              <!-- titulo del trabajo -->
-              <h3 class="jobs__card__title">Carousel Slider con Glider.js</h3>
-              <!-- descripcion del trabajo -->
-              <p class="jobs__card__description">
-                Glider js es una alternativa para hacer carruseles, es este caso lo use de prueba pero en <a
-                  href="https://conectandoestudiantes.com/">Conectando Estudiantes</a> lo use para mostrar cursos
-              </p>
-              <!-- botones -->
-              <!-- bonton ver pagina -->
-              <a href="https://ramigarcia.github.io/Carousel-Slider-con-Glider.js/" target="_blank"
-                class="jobs__card__button__page">Ver</a>
-              <!-- boton ver repositorio -->
-              <a href="https://github.com/ramigarcia/mi-primer-ecommerce-de-ropa" target="_blank"
-                class="jobs__card__button__repo">Repo</a>
-            </article>
-            <article class="jobs__card">
-              <!-- contenedor de imagen -->
-              <figure class="jobs__card__img">
-                <!-- imagen -->
-                <img src="./images/ramiro.png" alt="Logo ramiro">
-              </figure>
-              <!-- titulo del trabajo -->
-              <h3 class="jobs__card__title">Conectando Estudiantes</h3>
-              <!-- descripcion del trabajo -->
-              <p class="jobs__card__description">
-                Este es fue mi primer proyecto, partió de tener que hacer un proyecto para el colegio y después
-                exponerlo. <a href="https://conectandoestudiantes.com/src/about/about.html" target="_blank">Leer
-                  más...</a>
-              </p>
-              <!-- botones -->
-              <!-- bonton ver pagina -->
-              <a href="https://conectandoestudiantes.com/" target="_blank" class="jobs__card__button__page">Ver</a>
-              <!-- boton ver repositorio -->
-              <a href="https://github.com/ramigarcia/ConectandoEstudiantes" target="_blank"
-                class="jobs__card__button__repo">Repo</a>
-            </article>
-          </section>
+            <!-- botones -->
+            <!-- bonton ver pagina -->
+            <a href="https://ramigarcia.github.io/rosablanqNew/" target="_blank"
+              class="jobs__card__button__page">Ver</a>
+            <!-- boton ver repositorio -->
+            <a href="https://github.com/ramigarcia/rosablanqNew" target="_blank"
+              class="jobs__card__button__repo">Repo</a>
+          </article>
+          <article class="jobs__card">
+            <!-- contenedor de imagen -->
+            <figure class="jobs__card__img">
+              <!-- imagen -->
+              <img src="./images/ramiro.png" alt="Logo ramiro">
+            </figure>
+            <!-- titulo del trabajo -->
+            <h3 class="jobs__card__title">Pokedex</h3>
+            <!-- descripcion del trabajo -->
+            <p class="jobs__card__description">
+              Esta pokedex está hecha con Vanilla JavaScript para obtener los pokemones consumo la API de <a
+                href="https://pokeapi.co/" target="_blank">Poke API</a>, es uno de mis primero proyectos con API
+            </p>
+            <!-- botones -->
+            <!-- bonton ver pagina -->
+            <a href="https://ramigarcia.github.io/Pokedex-JavaScript-PokeAPI/" target="_blank"
+              class="jobs__card__button__page">Ver</a>
+            <!-- boton ver repositorio -->
+            <a href="https://github.com/ramigarcia/Pokedex-JavaScript-PokeAPI" target="_blank"
+              class="jobs__card__button__repo">Repo</a>
+          </article>
+          <article class="jobs__card">
+            <!-- contenedor de imagen -->
+            <figure class="jobs__card__img">
+              <!-- imagen -->
+              <img src="./images/ramiro.png" alt="Logo ramiro">
+            </figure>
+            <!-- titulo del trabajo -->
+            <h3 class="jobs__card__title">Clima City</h3>
+            <!-- descripcion del trabajo -->
+            <p class="jobs__card__description">
+              Esta es una App del clima, es simple buscas tu ciudad y te dice la temperatura y el clima. La API es de
+              openWeathermap
+            </p>
+            <!-- botones -->
+            <!-- bonton ver pagina -->
+            <a href="https://ramigarcia.github.io/Clima-city/" target="_blank" class="jobs__card__button__page">Ver</a>
+            <!-- boton ver repositorio -->
+            <a href="https://github.com/ramigarcia/Clima-city" target="_blank" class="jobs__card__button__repo">Repo</a>
+          </article>
+          <article class="jobs__card">
+            <!-- contenedor de imagen -->
+            <figure class="jobs__card__img">
+              <!-- imagen -->
+              <img src="./images/ramiro.png" alt="Logo ramiro">
+            </figure>
+            <!-- titulo del trabajo -->
+            <h3 class="jobs__card__title">Primer Ecommerce</h3>
+            <!-- descripcion del trabajo -->
+            <p class="jobs__card__description">
+              Este es mi primer "ecommerce", no está terminado pero era algo que quería hacer y me gusto, ya que era
+              la primera vez que intentaba hacer uno.
+            </p>
+            <!-- botones -->
+            <!-- bonton ver pagina -->
+            <span>No está subido a github pages porque maneja php. Pero podes ver el repo abajo</span>
+            <!-- boton ver repositorio -->
+            <a href="https://github.com/ramigarcia/mi-primer-ecommerce-de-ropa" target="_blank"
+              class="jobs__card__button__repo">Repo</a>
+          </article>
+          <article class="jobs__card">
+            <!-- contenedor de imagen -->
+            <figure class="jobs__card__img">
+              <!-- imagen -->
+              <img src="./images/ramiro.png" alt="Logo ramiro">
+            </figure>
+            <!-- titulo del trabajo -->
+            <h3 class="jobs__card__title">Fundación Poboha</h3>
+            <!-- descripcion del trabajo -->
+            <p class="jobs__card__description">
+              Fundación de bien público destinada al servicio de la familia policial. Este es un tipo de landing page
+              para la Fundación poboha <b>era de prueba</b>.
+            </p>
+            <!-- botones -->
+            <!-- bonton ver pagina -->
+            <a href="https://ramigarcia.github.io/poboha-Fundation/" target="_blank"
+              class="jobs__card__button__page">Ver</a>
+            <!-- boton ver repositorio -->
+            <a href="https://github.com/ramigarcia/poboha-Fundation" target="_blank"
+              class="jobs__card__button__repo">Repo</a>
+          </article>
+          <article class="jobs__card">
+            <!-- contenedor de imagen -->
+            <figure class="jobs__card__img">
+              <!-- imagen -->
+              <img src="./images/ramiro.png" alt="Logo ramiro">
+            </figure>
+            <!-- titulo del trabajo -->
+            <h3 class="jobs__card__title">Carousel Slider con Glider.js</h3>
+            <!-- descripcion del trabajo -->
+            <p class="jobs__card__description">
+              Glider js es una alternativa para hacer carruseles, en este caso lo use de prueba pero en <a
+                href="https://conectandoestudiantes.com/">Conectando Estudiantes</a> lo use para mostrar cursos
+            </p>
+            <!-- botones -->
+            <!-- bonton ver pagina -->
+            <a href="https://ramigarcia.github.io/Carousel-Slider-con-Glider.js/" target="_blank"
+              class="jobs__card__button__page">Ver</a>
+            <!-- boton ver repositorio -->
+            <a href="https://github.com/ramigarcia/mi-primer-ecommerce-de-ropa" target="_blank"
+              class="jobs__card__button__repo">Repo</a>
+          </article>
+          <article class="jobs__card">
+            <!-- contenedor de imagen -->
+            <figure class="jobs__card__img">
+              <!-- imagen -->
+              <img src="./images/ramiro.png" alt="Logo ramiro">
+            </figure>
+            <!-- titulo del trabajo -->
+            <h3 class="jobs__card__title">Conectando Estudiantes</h3>
+            <!-- descripcion del trabajo -->
+            <p class="jobs__card__description">
+              Este es fue mi primer proyecto, partió de tener que hacer un proyecto para el colegio y después
+              exponerlo. <a
+                href="https://conectandoestudiantes.com/src/about/about.html#:~:text=Este%20es,otras%20plataformas"
+                target="_blank">Leer
+                más...</a>
+            </p>
+            <!-- botones -->
+            <!-- bonton ver pagina -->
+            <a href="https://conectandoestudiantes.com/" target="_blank" class="jobs__card__button__page">Ver</a>
+            <!-- boton ver repositorio -->
+            <a href="https://github.com/ramigarcia/ConectandoEstudiantes" target="_blank"
+              class="jobs__card__button__repo">Repo</a>
+          </article>
         </section>
-        <!-- CONTACTO -->
-        <section class="contact">
-          <h2 class="contact__title" id="contacto">Contáctame 😉</h2>
-          <div class="contact__row">
-            <!-- Formulario -->
-            <form class="form contact__form__left" action="" method="POST">
-              <label for="nombre">
-                <span>Nombre</span>
-                <input type="text" name="nombre" placeholder="Ingrésa tu nombre"
-                  title="Nombre sólo acepta letras y espacios en blanco" minlength="2"
-                  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
-              </label>
-              <label for="email">
-                <span>E-mail</span>
-                <input type="email" name="email" placeholder="Ingrésa tu email" title="Email incorrecto"
-                  pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
-              </label>
-              <label for="asunto">
-                <span>Asunto</span>
-                <input list="asunto" name="asunto" title="El asunto es requerido" required>
-              </label>
-              <label for="mensaje">
-                <span>Tu mensaje</span>
-                <textarea name="message" cols="10" rows="5" placeholder="Escribe tu mensaje" minlength="2"
-                  data-pattern="^.{1,255}$" title="Tu mensaje no debe exceder los 255 caracteres" required></textarea>
-              </label>
-              <input type="submit" value="¡Enviar!" class="btn__form">
-              <div class="contact__form-loader none">
-                <img src="./assets/loader.svg" alt="Cargando">
-              </div>
-              <div class="contact__form-response none">
-                <p>Tu mensaje fue enviado!</p>
-              </div>
-            </form>
-            <!-- Container text -->
-            <div class="contact__text-right">
-              <p class="contact__text-right-text-alert">
-                Te informo que este formulario hace una simulación de un envío. Realmente no envía tu mensaje, cuando
-                pueda comprar mi dominio y hosting y poder subir mi portafolio bien, ahí va a ser cuando funcione
-                correctamente por mientras va a simular.
-              </p>
-              <p class="contact__text-right-text">
-                ¿Te gustaría que trabajemos Juntos?, envíame tu mensaje y charlémoslo.
-              </p>
-              <p class="contact__text-right-text">
-                ¿Querés enviarme tu opinión sobre mi portafolio?, hacélo estoy dispuesto a leerte <em>(porfavor se
-                  respetuoso)</em>.
-              </p>
-              <p class="contact__text-right-text">
-                También podes saludarme, te voy a devolver el saludo.
-              </p>
-            </div>
+      </section>
+    </main>
+
+    <!-- CONTACTO -->
+    <section class="contact">
+      <h2 class="contact__title" id="contacto">Contáctame 😉</h2>
+      <div class="contact__row">
+        <!-- Formulario -->
+        <form class="form contact__form__left" role="form" action="#" method="POST">
+          <label for="nombre">
+            <span>Nombre</span>
+            <input type="text" name="nombre" placeholder="Ingrésa tu nombre"
+              title="Nombre sólo acepta letras y espacios en blanco" minlength="2" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              required>
+          </label>
+          <label for="email">
+            <span>E-mail</span>
+            <input type="email" name="email" placeholder="Ingrésa tu email" title="Email incorrecto"
+              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+          </label>
+          <label for="asunto">
+            <span>Asunto</span>
+            <input list="asunto" name="asunto" title="El asunto es requerido" required>
+          </label>
+          <label for="mensaje">
+            <span>Tu mensaje</span>
+            <textarea name="message" cols="10" rows="5" placeholder="Escribe tu mensaje" minlength="2"
+              data-pattern="^.{1,255}$" title="Tu mensaje no debe exceder los 255 caracteres" required></textarea>
+          </label>
+          <button type="submit" class="btn__form">¡Enviar!</button>
+          <div class="contact__form-loader none">
+            <img src="./assets/loader.svg" alt="Cargando" title="Cargando">
           </div>
-        </section>
+          <div class="contact__form-response none">
+            <p>Tu mensaje fue enviado!</p>
+          </div>
+        </form>
+        <!-- Container text -->
+        <div class="contact__text-right">
+          <p class="contact__text-right-text-alert">
+            Te informo que este formulario hace una simulación de un envío. Realmente no envía tu mensaje.
+          </p>
+          <p class="contact__text-right-text">
+            ¿Te gustaría que trabajemos Juntos?, envíame tu mensaje y charlémoslo.
+          </p>
+          <p class="contact__text-right-text">
+            ¿Querés enviarme tu opinión sobre mi portafolio?, hacélo estoy dispuesto a leerte, <span>porfavor se
+              respetuoso</span>
+          </p>
+          <p class="contact__text-right-text">
+            También podes saludarme, te voy a devolver el saludo.
+          </p>
+        </div>
       </div>
     </section>
-  </main>
+  </div>
   <script src="./js/index.js" type="module"></script>
   <script src="./js/menu.js"></script>
 </body>

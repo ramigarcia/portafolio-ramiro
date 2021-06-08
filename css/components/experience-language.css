@@ -1,0 +1,89 @@
+.experience__languages {
+  max-width: 95%;
+  height: calc(100% - 98px);
+  margin: 70px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.language {
+  width: 398px;
+  overflow: hidden;
+  margin: 15px auto;
+  position: relative;
+}
+
+.language::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 2px;
+  height: 100%;
+  background: var(--rosita);
+}
+
+.language__title {
+  text-align: center;
+  color: white;
+  font-size: 1.7rem;
+  position: relative;
+}
+
+.html__title::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: var(--html);
+  margin: auto;
+}
+
+.css__title::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: var(--css);
+  margin: auto;
+}
+
+.js__title::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: var(--js);
+  margin: auto;
+}
+
+.container__text__language {
+  padding: 20px;
+  margin-top: 25px;
+  height: calc(100% - 60px);
+}
+
+.language__text {
+  color: white;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+}
+
+.language__text a {
+  color: var(--primary);
+}

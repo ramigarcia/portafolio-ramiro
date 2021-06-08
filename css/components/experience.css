@@ -1,0 +1,29 @@
+/* Experiencia */
+.experience {
+  margin: 80px auto 0 auto;
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+  z-index: 3;
+}
+
+.experience__title {
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: 2.4rem;
+}
+
+.experience__text {
+  max-width: 700px;
+  padding: 20px;
+  margin: 80px auto;
+  background: rgba(255, 0, 113, 0.7);
+  box-shadow: 8px 8px 12px rgba(37, 75, 221, 0.3);
+}
+
+.experience__text .text {
+  letter-spacing: 1px;
+  line-height: 26px;
+  color: white;
+}

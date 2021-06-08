@@ -1,0 +1,6 @@
+.circle__image {
+  position: absolute;
+  top: 520px;
+  left: -200px;
+  z-index: 1;
+}

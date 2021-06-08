@@ -1,0 +1,74 @@
+.jobs .jobs__cards .jobs__card {
+  min-width: 200px;
+  max-width: 280px;
+  min-height: 500px;
+  overflow: hidden;
+  margin: 20px;
+  background: rgb(248, 248, 248);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease-in;
+}
+
+.jobs .jobs__cards .jobs__card:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 5px 8px rgba(167, 167, 167, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.jobs .jobs__cards .jobs__card .jobs__card__img {
+  height: 80px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jobs__card__title {
+  font-weight: 600;
+  font-size: 23px;
+  text-align: center;
+}
+
+.jobs .jobs__cards .jobs__card .jobs__card__description {
+  min-height: 130px;
+  line-height: 21px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: var(--secondaryFont);
+}
+
+.jobs__card__description a {
+  color: rgb(63, 105, 255);
+  text-decoration: underline;
+}
+
+.jobs__card__button__page,
+.jobs__card__button__repo {
+  margin: 5px;
+  width: 70%;
+  min-height: 35px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-family: var(--secondaryFont);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobs__card__button__page {
+  background: var(--primary);
+  color: white;
+}
+
+.jobs__card__button__repo {
+  background: white;
+  color: var(--baseSecondary);
+}

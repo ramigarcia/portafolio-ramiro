@@ -1,0 +1,99 @@
+/* Seccion Contacto */
+
+.contact {
+  width: 100%;
+  margin: 80px 0 40px 0;
+}
+
+.contact__title {
+  color: var(--bgBody);
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.contact__row {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact__text-right {
+  max-width: 600px;
+  width: 100%;
+  margin: 0;
+  min-height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__text-right-text-alert {
+  max-width: 550px;
+  border-radius: 5px;
+  padding: 15px;
+  line-height: 25px;
+  background-color: rgba(255, 0, 115, 0.5);
+  color: white;
+  font-family: var(--secondaryFont);
+  font-size: 1.1rem;
+  font-weight: 400;
+  box-shadow: 3px 4px 6px rgba(63, 105, 255, 0.5);
+}
+
+.contact__text-right-text {
+  max-width: 550px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  line-height: 25px;
+  background-color: var(--bgBody);
+  color: var(--baseSecondary);
+  font-family: var(--secondaryFont);
+  font-weight: 300;
+  box-shadow: 3px 4px 6px rgba(63, 105, 255, 0.5);
+  font-size: 1.1rem;
+}
+
+.contact__text-right-text span {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.none {
+  display: none;
+}
+
+.contact__form-response p {
+  color: white;
+  font-size: 1.2rem;
+  font-family: var(--primaryFont);
+  font-weight: 500;
+}
+
+.contact__form-loader {
+  margin-top: 10px;
+}
+
+.form .contact__form-error {
+  background-color: var(--bgBody);
+  color: var(--rosita);
+  font-size: 0.8rem;
+  max-width: 320px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin: auto auto 10px;
+  padding: 5px 10px;
+}
+
+#message {
+  margin-top: -4px;
+}
+
+.is-active {
+  display: block;
+}

@@ -1,0 +1,62 @@
+/* trabajos */
+.jobs {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  margin: auto;
+}
+
+.jobs .jobs__title {
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-family: var(--secondaryFont);
+  position: relative;
+}
+
+.alert__jobs {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  margin: auto;
+  background: rgba(255, 0, 113, 0.7);
+  box-shadow: 8px 8px 12px rgba(37, 75, 221, 0.3);
+  position: relative;
+  transform: scale(1);
+  transition: all 0.4s ease-out;
+}
+
+.hide__alert__jobs {
+  display: none;
+  transition: all 0.4s ease-out;
+}
+
+.alert__jobs p {
+  color: white;
+  margin-right: 20px;
+}
+
+.alert__jobs svg {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.jobs__title::after,
+.experience__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--rosita);
+}
