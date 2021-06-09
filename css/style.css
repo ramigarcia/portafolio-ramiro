@@ -283,6 +283,9 @@ header {
   .jobs__card__description {
     font-size: 1.2rem;
   }
+  .form label input {
+    width: 300px;
+  }
 }
 @media screen and (max-width: 375px) {
   .hero .hero__ghost__profile {
@@ -292,5 +295,13 @@ header {
   .container-grid {
     width: 300px;
     height: 30px;
+  }
+  .contact__row {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 340px) {
+  .form label input {
+    width: 280px;
   }
 }
