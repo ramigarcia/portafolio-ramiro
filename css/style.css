@@ -1,9 +1,9 @@
 @import "./components/overlay.css";
 @import "./components/navegacion.css";
+@import "./components/hero.css";
 @import "./components/data-ramiro.css";
 @import "./components/cuenta-regresiva.css";
 @import "./components/ghost.css";
-@import "./components/hero.css";
 @import "./components/circle-image.css";
 @import "./components/puntitos-image.css";
 @import "./components/experience.css";
@@ -42,7 +42,7 @@
 }
 
 body {
-  max-width: 100vw;
+  width: 100%;
   background: var(--bgBody);
   font-size: 1rem;
   font-family: var(--primaryFont);
@@ -252,6 +252,36 @@ header {
 @media screen and (max-width: 650px) {
   .container {
     clip-path: polygon(50% 2%, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+@media screen and (max-width: 430px) {
+  .hero,
+  .experience,
+  .jobs,
+  .contact {
+    width: 95%;
+  }
+
+  .experience__languages {
+    margin: 30px auto 0 auto;
+  }
+  .language {
+    max-width: 370px;
+    width: 100%;
+    box-shadow: 8px 8px 6px 0px rgba(255, 0, 115, 0.6);
+  }
+  .experience__text {
+    max-width: 380px;
+    margin: 70px auto 20px;
+    box-shadow: 8px 10px 10px rgba(37, 75, 221, 0.3);
+  }
+
+  .alert__jobs {
+    max-width: 380px;
+    box-shadow: 8px 10px 10px rgba(37, 75, 221, 0.3);
+  }
+  .jobs__card__description {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 375px) {
