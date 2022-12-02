@@ -6,7 +6,7 @@ const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
   e.preventDefault("");
-  countdown("countdown", "May 3, 2022", "¡Hoy es mi cumpleaños yeah!");
+  countdown("countdown", "May 3, 2023", "¡Hoy es mi cumpleaños yeah!");
   hideAlert();
   contactFormValidation();
 });
