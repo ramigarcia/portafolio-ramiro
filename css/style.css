@@ -7,7 +7,8 @@
 @import "./components/circle-image.css";
 @import "./components/puntitos-image.css";
 @import "./components/experience.css";
-@import "./components/experience-language.css";
+@import "./components/technology.css";
+@import "./components/technology-language.css";
 @import "./components/jobs.css";
 @import "./components/jobs-cards.css";
 @import "./components/jobs-card.css";
@@ -72,7 +73,7 @@ header {
 .container {
   width: 100%;
   margin: 80px auto 0 auto;
-  padding: 150px 0 0 0;
+  padding: 180px 0 0 0;
   position: relative;
   z-index: 2;
   display: flex;
@@ -81,6 +82,20 @@ header {
   background: var(--baseSecondary);
   justify-content: center;
   clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.jobs__title::after,
+.technology__title::after,
+.experience__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--rosita);
 }
 
 @media screen and (max-width: 1040px) {
@@ -115,18 +130,19 @@ header {
   }
 }
 @media screen and (max-width: 948px) {
-  .experience {
+  .technology {
     display: flex;
     flex-direction: column;
   }
-  .experience__languages {
-    flex-direction: column;
+  .technology__languages {
+    min-width: 600;
+    /* flex-direction: column; */
   }
   .language::after {
     display: none;
   }
   .language {
-    max-width: 500px;
+    max-width: 225px;
     text-align: center;
     margin: 20px auto;
   }
@@ -135,7 +151,7 @@ header {
   .container {
     clip-path: polygon(50% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
   }
-  .experience {
+  .technology {
     margin: 25px auto 0 auto;
   }
 }
@@ -143,52 +159,7 @@ header {
   .container {
     clip-path: polygon(50% 2%, 100% 0, 100% 100%, 0 100%, 0 0);
   }
-  .hero {
-    flex-direction: column;
-  }
-  .hero .hero__data__profile {
-    margin-left: 0;
-  }
-  .hero .hero__ghost__profile {
-    right: 0;
-    left: 0;
-    margin: 40px auto;
-  }
-  .hero__ghost__profile .container-grid {
-    bottom: -29px;
-  }
-  .language {
-    width: 398px;
-    overflow: hidden;
-    margin: 15px auto;
-    position: relative;
-    box-shadow: 8px 6px 8px 3px rgba(255, 0, 115, 0.7);
-    background-color: rgb(34, 37, 42, 0.8);
-  }
 
-  .experience__text {
-    max-width: 650px;
-    padding: 20px;
-    margin: 80px auto;
-    background: rgba(255, 0, 113, 0.7);
-    box-shadow: 8px 8px 12px rgba(37, 75, 221, 0.3);
-  }
-
-  .experience__text .text {
-    letter-spacing: 1px;
-    line-height: 27px;
-    color: white;
-  }
-}
-@media screen and (max-width: 755px) {
-  .circle {
-    display: none;
-  }
-  .jobs .jobs__cards .jobs__card {
-    max-width: 350px;
-  }
-}
-@media screen and (max-width: 700px) {
   .navigation .navigation__list {
     z-index: 1000;
     background: var(--baseSecondary);
@@ -248,6 +219,51 @@ header {
     transform: translateX(0%);
     transition: all 0.3s ease-in;
   }
+
+  .hero {
+    flex-direction: column;
+  }
+  .hero .hero__data__profile {
+    margin-left: 0;
+  }
+  .hero .hero__ghost__profile {
+    right: 0;
+    left: 0;
+    margin: 40px auto;
+  }
+  .hero__ghost__profile .container-grid {
+    bottom: -29px;
+  }
+  .language {
+    width: 370px;
+    overflow: hidden;
+    margin: 15px auto;
+    position: relative;
+    box-shadow: 8px 6px 8px 3px rgba(255, 0, 115, 0.7);
+    background-color: rgb(34, 37, 42, 0.9);
+  }
+
+  .technology__text {
+    max-width: 650px;
+    padding: 20px;
+    margin: 80px auto;
+    background: rgba(255, 0, 113, 0.7);
+    box-shadow: 8px 8px 12px rgba(37, 75, 221, 0.3);
+  }
+
+  .technology__text .text {
+    letter-spacing: 1px;
+    line-height: 27px;
+    color: white;
+  }
+}
+@media screen and (max-width: 755px) {
+  .circle {
+    display: none;
+  }
+  .jobs .jobs__cards .jobs__card {
+    max-width: 350px;
+  }
 }
 @media screen and (max-width: 650px) {
   .container {
@@ -256,13 +272,12 @@ header {
 }
 @media screen and (max-width: 430px) {
   .hero,
-  .experience,
+  .technology,
   .jobs,
   .contact {
     width: 95%;
   }
-
-  .experience__languages {
+  .technology__languages {
     margin: 30px auto 0 auto;
   }
   .language {
@@ -270,7 +285,7 @@ header {
     width: 100%;
     box-shadow: 8px 8px 6px 0px rgba(255, 0, 115, 0.6);
   }
-  .experience__text {
+  .technology__text {
     max-width: 380px;
     margin: 70px auto 20px;
     box-shadow: 8px 10px 10px rgba(37, 75, 221, 0.3);
