@@ -1,0 +1,48 @@
+.experience {
+  width: 100%;
+  max-width: 1250px;
+  margin: 80px auto 0 auto;
+  position: relative;
+  z-index: 3;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.experience__title {
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: 2.4rem;
+}
+
+.experience__company {
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  margin: 50px 0;
+  align-self: baseline;
+}
+
+.experience__company__data h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+.experience__company__data h4 {
+  color: var(--withe80);
+  font-size: 1rem;
+  text-wrap: balance;
+}
+.experience__company__data h4 span {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.experience__company__text {
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  text-wrap: pretty;
+}
